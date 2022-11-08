@@ -22,14 +22,17 @@
     @media screen and (max-width: 768px) {
       display: flex;
       flex-direction: column-reverse;
-      justify-content: space-evenly;
-      height: 100%;
+      align-items: stretch;
+      justify-content: flex-end;
+      min-height: 100%;
 
     }
 
     .content_block {
       display: grid;
       grid-template-columns: 1fr 8fr;
+
+
 
 
       .item_avatar {
@@ -51,7 +54,11 @@
         flex-direction: column;
 
         @media screen and (max-width: 768px) {
-          justify-content: space-around;
+          //justify-content: space-around;
+          display: grid;
+          grid-template-rows: 3fr 1fr 1fr;
+
+
 
 
         }
@@ -65,6 +72,8 @@
           color: #3A4562;
 
           @media screen and (max-width: 768px) {
+            display: flex;
+            align-items: center;
             font-style: normal;
             font-weight: 400;
             font-size: 18px;
@@ -72,6 +81,7 @@
             letter-spacing: -0.5625px;
             color: #3A4562;
             margin-bottom: 2px;
+            text-align: left;
           }
 
           &:hover {
@@ -139,19 +149,22 @@
       grid-template-columns: 3fr 3fr;
 
       @media screen and (max-width: 768px) {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2fr 2.5fr;
         display: grid;
+        justify-items: stretch;
 
       }
 
       .ratings_block {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+
 
 
         @media screen and (max-width: 768px) {
           height: 20px;
+          padding-left: 15px;
         }
       }
 
@@ -181,7 +194,7 @@
           font-size: 16px;
           line-height: 25px;
           display: flex;
-          align-items: flex-end;
+          //align-items: flex-end;
           text-align: right;
           letter-spacing: 0.23619px;
           color: #878D9D;
