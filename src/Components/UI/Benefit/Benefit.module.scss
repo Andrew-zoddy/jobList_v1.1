@@ -1,0 +1,22 @@
+.benefit_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 50px;
+  background: rgba(255, 207, 0, 0.15);
+  border: 1px solid #FFCF00;
+  border-radius: 8px;
+  margin-right: 8px;
+
+  .benefit_item {
+    font-family: 'Proxima Nova-Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #988B49;
+  }
+}

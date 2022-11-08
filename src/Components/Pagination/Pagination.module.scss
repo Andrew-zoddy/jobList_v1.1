@@ -1,0 +1,82 @@
+.pageNumber_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+  .pageNumbers_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 52px;
+    background: #FFFFFF;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 10.4px;
+
+    .items_block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 8px;
+
+    }
+
+    .arrow_left {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-bottom: 5px;
+      border-bottom: 3px solid #5876C5;
+      border-left: 3px solid #5876C5;
+      border-radius: 3px;
+      transform: rotate(45deg);
+      cursor: pointer;
+    }
+
+    .arrow_right {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-bottom: 5px;
+      border-bottom: 3px solid #5876C5;
+      border-left: 3px solid #5876C5;
+      border-radius: 3px;
+      transform: rotate(-135deg);
+      cursor: pointer;
+    }
+
+
+  }
+}
+
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 31px;
+  border-bottom: 2.6px solid #5876C5;;
+  text-align: center;
+  line-height: 25px;
+  color: #5876C5;
+  font-family: "Proxima Nova Th", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+
+}
+
+.non_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 31px;
+  text-align: center;
+  line-height: 25px;
+  color: #70778B;
+  font-family: "Proxima Nova Th", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+}

@@ -1,0 +1,204 @@
+.item_wrapper {
+  height: 165px;
+  background: #FFFFFF;
+  padding: 24px 16px 24px 16px;
+  width: 100%;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  margin: 0 auto 8px;
+
+  @media screen and (max-width: 768px) {
+    min-width: 360px;
+    height: 206px;
+    padding: 5px 8px 5px 8px;
+    background: #EFF0F5;
+    border-radius: 8px;
+  }
+
+  .item_container {
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      height: 100%;
+
+    }
+
+    .content_block {
+      display: grid;
+      grid-template-columns: 1fr 8fr;
+
+
+      .item_avatar {
+        margin-right: 25px;
+
+        @media screen and (max-width: 768px) {
+          margin-right: 10px;
+        }
+
+        .item_image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+
+      .text_block {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 768px) {
+          justify-content: space-around;
+
+
+        }
+
+        .item_title {
+          font-size: 20px;
+          font-family: 'Proxima Nova', sans-serif;
+          font-weight: 700;
+          line-height: 25px;
+          margin-bottom: 8px;
+          color: #3A4562;
+
+          @media screen and (max-width: 768px) {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.5625px;
+            color: #3A4562;
+            margin-bottom: 2px;
+          }
+
+          &:hover {
+            color: black;
+            text-shadow: 1px 1px 5px rgba(128, 128, 128, 0.6);
+          }
+        }
+
+        .item_name {
+          font-family: 'Proxima Nova', sans-serif;
+          font-size: 16px;
+          line-height: 25px;
+          font-weight: 400;
+          color: #878D9D;
+          margin-bottom: 8px;
+
+          @media screen and (max-width: 768px) {
+            line-height: 24px;
+            letter-spacing: -0.5625px;
+
+            color: #878D9D;
+            margin-bottom: 2px;
+          }
+
+          .dot_element:after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: rgba(119, 119, 119, 0.71);
+            display: inline-block;
+            transform: translate(0, -50%);
+            margin: 0 5px 0 5px;
+
+          }
+
+        }
+
+        .item_location {
+          font-family: 'Proxima Nova', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          color: #878D9D;
+
+          &:before {
+            content: '';
+            background: url("http://cdn.onlinewebfonts.com/svg/img_292414.png");
+            background-size: contain;
+            opacity: 0.5;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+
+          }
+        }
+      }
+
+    }
+
+    .rating_info_block{
+      display: grid;
+      grid-template-columns: 3fr 3fr;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 2fr 1fr;
+        display: grid;
+
+      }
+
+      .ratings_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        @media screen and (max-width: 768px) {
+          height: 20px;
+        }
+      }
+
+      .info_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @media screen and (max-width: 768px) {
+
+        }
+
+        .item_bookmark {
+          width: 25px;
+          cursor: pointer;
+
+          @media screen and (max-width: 768px) {
+            display: none;
+
+
+        }
+        }
+        .item_date {
+          font-family: 'Proxima Nova', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          display: flex;
+          align-items: flex-end;
+          text-align: right;
+          letter-spacing: 0.23619px;
+          color: #878D9D;
+
+        } @media screen and (max-width: 768px) {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        letter-spacing: 0.206667px;
+        color: #878D9D;
+      }
+
+      }
+    }
+
+
+  }
+
+}

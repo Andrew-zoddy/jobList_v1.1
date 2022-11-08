@@ -1,0 +1,16 @@
+.jobList_wrapper {
+  background: #E6E9F2;
+  min-height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    min-width: 360px;
+  }
+
+  .jobList_container {
+    padding: 15px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      padding: 5px;
+    }
+  }
+}

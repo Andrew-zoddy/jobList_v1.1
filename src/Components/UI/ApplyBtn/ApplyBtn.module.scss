@@ -1,0 +1,20 @@
+.apply_btn {
+  padding: 18px 30px;
+  width: 127px;
+  height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #384564;
+  border-radius: 8px;
+
+  &:hover {
+    background: #9299b7;
+    cursor: pointer;
+  }
+}
