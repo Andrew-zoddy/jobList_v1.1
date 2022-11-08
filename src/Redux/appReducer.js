@@ -8,7 +8,6 @@ const initialState = {
     error: '',
     success: '',
     loading: false,
-
 }
 
 //Reducer
