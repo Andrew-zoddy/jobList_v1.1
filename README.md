@@ -1,3 +1,23 @@
+# Hey, 
+
+This App was created using create-react-app.
+
+It's a single-page app, job List. 
+
+Link to app : https://job-list-react.netlify.app
+
+Used packages : 
+Antd design Library, axios, Redux (+thunk), sass, moment, react-google-maps/api,
+and other standard for react-app.
+
+Issue with "For Development purposes only"  - frankly, I am not intended to push API_KEY to public repository - 
+so sorry for the visuals - but in real -  I've used https://snazzymaps.com/style/287720/modest styling array. 
+
+============================================================
+
+
+
+ #Default React README : 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
